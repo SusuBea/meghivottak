@@ -31,7 +31,7 @@ class OrganisatorController extends Controller
         $organisator->save();
     }
 
-    public function destroy(Request $request, $id){
+    public function destroy($id){
         $organisator = Organisator::find($id);       
          $organisator->delete();
     }

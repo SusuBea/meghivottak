@@ -18,14 +18,6 @@ return new class extends Migration
             $table->text('description');
             $table->timestamps();
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('organisators');
 
         Organisator::create([
             'name'=> 'Bea',
@@ -41,6 +33,17 @@ return new class extends Migration
             'name'=> 'Mariann',
             'description'=> 'Ital',
         ]);
+
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('organisators');
+
+       
 
 
     }
