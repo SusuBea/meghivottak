@@ -20,3 +20,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
+Route::get('/organisators' , [OrganisatorController::class, 'index']);
+Route::get('/organisators/{id}' , [OrganisatorController::class, 'show']);
+Route::post('/organisators' , [OrganisatorController::class, 'store']);
+Route::put('/organisators/{id}' , [OrganisatorController::class, 'update']);
+Route::delete('/organisators/{id}' , [OrganisatorController::class, 'destroy']);

@@ -30,4 +30,8 @@ class OrganisatorController extends Controller
         $organisator->description = $request->description;
         $organisator->save();
     }
+
+    public function destroy(Request $request, $id){
+        $organisator = Organisator::find($id);        $organisator->delete();
+    }
 }

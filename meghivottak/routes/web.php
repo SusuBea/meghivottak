@@ -19,7 +19,3 @@ Route::get('/', function () {
 });
 
 
-Route::get('/organisators' , [OrganisatorController::class, 'index']);
-Route::get('/organisators/{id}' , [OrganisatorController::class, 'show']);
-Route::post('/organisators' , [OrganisatorController::class, 'store']);
-Route::put('/organisators/{id}' , [OrganisatorController::class, 'update']);
