@@ -20,7 +20,12 @@ return new class extends Migration
             $table->timestamps();
         });
 
-
+        Event::create([
+            'date'=> '2022-01-01',
+            'location'=> 'Bp',
+            'org_id'=> 1,
+         
+        ]);
 
     }
 

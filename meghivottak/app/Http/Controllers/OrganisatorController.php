@@ -32,6 +32,7 @@ class OrganisatorController extends Controller
     }
 
     public function destroy(Request $request, $id){
-        $organisator = Organisator::find($id);        $organisator->delete();
+        $organisator = Organisator::find($id);       
+         $organisator->delete();
     }
 }
